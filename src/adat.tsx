@@ -6,32 +6,32 @@ export interface AdatTipus { /* objektum */
 export const ADATLISTA:AdatTipus[]=[ /* Adattipusu objectum lista */
     {
         index: 0,
-        jel: 'X'
+        jel: ' '
     },
     {
         index: 1,
-        jel: 'X'
+        jel: ' '
     },
     {
         index: 2,
-        jel: 'X'
+        jel: ' '
     },{
         index: 3,
-        jel: 'X'
+        jel: ' '
     },{
         index: 4,
-        jel: 'X'
+        jel: ' '
     },{
         index: 5,
-        jel: 'X'
+        jel: ' '
     },{
         index: 6,
-        jel: 'X'
+        jel: ' '
     },{
         index: 7,
-        jel: 'X'
+        jel: ' '
     },{
         index: 8,
-        jel: 'X'
+        jel: ' '
     }
 ];

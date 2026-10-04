@@ -1,3 +1,4 @@
+import './Jatekter.css'
 import type { AdatTipus } from "../adat";
 import Elem from "./Elem";
 
