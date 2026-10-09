@@ -1,18 +1,15 @@
 import './Jatekter.css'
-import type { AdatTipus } from "../adat";
 import Elem from "./Elem";
+import { useTicTacToeContext} from "../contexts/TicTacToeContext";
 
-interface JatekterProps{
-    lista: AdatTipus[];
-    kivalasztKezelo:(index:number)=>void;
-}
+function Jatekter(){
+    const {lista} = useTicTacToeContext();
 
-function Jatekter({lista, kivalasztKezelo}:JatekterProps){
     return(
         <div className="jatekter">
             {
                 lista.map((e,i)=>{
-                    return <Elem adat={e} key={i} index={i} kivalasztKezelo={kivalasztKezelo}/>
+                    return <Elem adat={e} key={i} index={i}/>
                 })
             }
         </div>

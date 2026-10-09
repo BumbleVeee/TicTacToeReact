@@ -1,16 +1,20 @@
 import './Elem.css';
 import type { AdatTipus } from "../adat";
+import { useTicTacToeContext } from '../contexts/TicTacToeContext';
 
 interface ElemProps {
     adat: AdatTipus;
     index: number;
-    kivalasztKezelo:(index:number)=>void;
 }
 
-export default function Elem({adat, index, kivalasztKezelo}:ElemProps){
+function Elem({adat, index}:ElemProps){
+    const { kivalasztKezelo } = useTicTacToeContext();
+
     return(
         <>
             <button className="elem" onClick={() => kivalasztKezelo(index)}>{adat.jel}</button>
         </>
     )
 }
+
+export default Elem;
